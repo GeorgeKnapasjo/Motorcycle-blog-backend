@@ -1,0 +1,9 @@
+2021-06-19 11:16:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BLOGS ( ID VARCHAR PRIMARY KEY, TITLE VARCHAR, CONTENT VARCHAR, )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE blogs ( id VARCHAR PRIMARY KEY, title VARCHAR, content VARCHAR, ) [42001-200]
+2021-06-19 11:17:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BLOGS ( ID VARCHAR PRIMARY KEY, TITLE VARCHAR, CONTENT VARCHAR, )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE blogs ( id VARCHAR PRIMARY KEY, title VARCHAR, content VARCHAR, ) [42001-200]
+2021-06-19 11:19:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE BLOGS ( ID INT AUTO_INCREMENT PRIMARY KEY, TITLE VARCHAR, CONTENT VARCHAR, )[*]"; expected "identifier"; SQL statement:
+CREATE TABLE blogs ( id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR, content VARCHAR, ) [42001-200]
