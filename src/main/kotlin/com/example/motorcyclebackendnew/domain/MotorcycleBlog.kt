@@ -11,5 +11,4 @@ data class MotorcycleBlog (
     val id: String,
     val title: String,
     val content: String,
-
 )
