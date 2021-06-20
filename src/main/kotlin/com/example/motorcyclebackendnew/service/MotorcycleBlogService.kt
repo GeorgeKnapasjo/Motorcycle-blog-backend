@@ -9,7 +9,13 @@ class MotorcycleBlogService(val db: MotorcycleBlogRepository) {
 
     fun getBlogs(): List<MotorcycleBlog> = db.getBlogs()
     fun add(motorcycleBlog: MotorcycleBlog) {
-        db.save(motorcycleBlog)
+//        try{
+            db.save(motorcycleBlog)
+//        } catch (err:IllegalArgumentException) {
+//            println(" ")
+//            println(" ")
+//            println(err)
+//        }
     }
 
 }
