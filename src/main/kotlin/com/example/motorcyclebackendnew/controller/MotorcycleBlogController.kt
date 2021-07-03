@@ -13,5 +13,10 @@ class MotorcycleBlogController (val service: MotorcycleBlogService){
     fun getBlogs(): List<MotorcycleBlog> = service.getBlogs()
 
     @PostMapping
+    @CrossOrigin
     fun addBlog(@RequestBody motorcycleBlog: MotorcycleBlog) = service.add(motorcycleBlog)
+
+    @GetMapping("/Blogpost")
+    @CrossOrigin
+    fun getBlog(@RequestParam title: String) = service.getBlog(title)
 }

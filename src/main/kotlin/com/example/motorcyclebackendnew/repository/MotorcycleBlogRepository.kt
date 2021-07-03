@@ -10,8 +10,8 @@ interface MotorcycleBlogRepository : CrudRepository<MotorcycleBlog, String> {
     @Query(value = "select * from blogs", nativeQuery = true)
     fun getBlogs(): List<MotorcycleBlog>
 
-    @Query(value = "select * from vouchers where id = :id", nativeQuery = true)
+    @Query(value = "select * from blogs where id = :id", nativeQuery = true)
     fun getBlog(
         @Param("id") id: String
-    ): List<MotorcycleBlog>
+    ): MotorcycleBlog
 }

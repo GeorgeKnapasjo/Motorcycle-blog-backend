@@ -26,4 +26,6 @@ class MotorcycleBlogService(val db: MotorcycleBlogRepository) {
 //        }
     }
 
+    fun getBlog(title: String): MotorcycleBlog = db.getBlog(title)
+
 }
