@@ -5,12 +5,13 @@ import com.example.motorcyclebackendnew.service.MotorcycleBlogService
 import org.springframework.web.bind.annotation.*
 
 @RestController
+@RequestMapping("/Blogs")
 class MotorcycleBlogController (val service: MotorcycleBlogService){
 
-    @GetMapping("/Blogs")
+    @GetMapping
     @CrossOrigin
     fun getBlogs(): List<MotorcycleBlog> = service.getBlogs()
 
-    @PostMapping("/Blogs")
+    @PostMapping
     fun addBlog(@RequestBody motorcycleBlog: MotorcycleBlog) = service.add(motorcycleBlog)
 }
